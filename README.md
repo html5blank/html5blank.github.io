@@ -1,4 +1,3 @@
-html5blank.github.io
-====================
+# HTML5 Blank
 
-Source code for HTML5 Blank
+Source code for html5blank.com

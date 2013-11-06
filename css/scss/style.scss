@@ -1,0 +1,283 @@
+/*!
+	HTML5 Blank WordPress Theme
+	URL        : www.html5blank.com
+	Author     : Todd Motto
+	Author URI : www.toddmotto.com
+	Language   : CSS (SASS/SCSS Compiled)
+	Version    : 2.0.0
+*/
+
+/*------------------------------------*\
+	MIXINS
+\*------------------------------------*/
+
+@import 'mixins/mixins.scss';
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+*,
+*:after,
+*:before {
+	margin:0;
+	padding:0;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	@include vendor(box-sizing, border-box);
+}
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+html {
+	font-size:100%;
+}
+body {
+	font:300 20px/1.4 'BigNoodleOblique', Helvetica, Arial;
+	color:#808080;
+	background:#FFF;
+	padding:0 0 
+}
+.clear:before,
+.clear:after{
+	content:' ';
+	display:table;
+}
+.clear:after{
+	clear:both;
+}
+.clear{
+	*zoom:1
+}
+ul,
+ol {
+	list-style:none;
+}
+a {
+	color:#FFF;
+	text-decoration:none;
+}
+a,
+a:hover {
+	@include vendor(transition, all 0.2s ease-in-out);
+}
+img {
+	border:0;
+	max-width:100%;
+	vertical-align:bottom;
+    -ms-interpolation-mode:bicubic;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight:100;
+}
+/* h1 */.alpha {
+	font-size:30px;
+}
+/* h2 */.beta {
+	font-size:30px;
+}
+/* h3 */.gamma {
+	font-size:18px;
+}
+/* h4 */.delta {
+	font-size:16px;
+}
+/* h5 */.epsilon {
+	font-size:14px;
+}
+/* h6 */.zeta {
+	font-size:12px;
+}
+/* header */
+.header {
+	
+}
+/* sidebar */
+.sidebar {
+	background:#ECF0F1;
+	width:300px;
+	@include position(fixed, 40px 0 0px 0px);
+}
+.footer {
+	padding:10px 20px;
+	@include position(absolute, 0 0 0px 0px);
+}
+/* logo */
+.logo {
+	float:left;
+	background:#E67E22;
+	a {
+		display:block;
+	}
+}
+.logo__img {
+	background:url(../img/logo.png) no-repeat;
+	margin:10px;
+	width:60px;
+	height:63px;
+	.svg & {
+		background:url(../img/logo.svg) no-repeat;
+		background-size:60px 63px;
+	}
+}
+.logo__mark {
+	float:left;
+	padding:15px 0 0 15px;
+}
+.logo__mark--alpha,
+.logo__mark--beta {
+	font-size:34px;
+	line-height:34px;
+}
+/* fireshell */
+.fireshell {
+	width:100%;
+	background:#f5f5f5;
+	border-bottom:1px solid #e5e5e5;
+	padding:4px;
+	text-align:center;
+	@include position(fixed, 0px 0 0 0px);
+	a {
+		display:inline-block;
+		padding:5px 15px 0;
+		margin:0 0 0 15px;
+		background:#000;
+		color:#fff;
+	}
+}
+/* intro */
+.intro {
+	margin:25px 0;
+	padding:0 25px;
+}
+.intro__overview {
+	span {
+		color:#E67E22;
+	}
+}
+/* download */
+.download {
+	margin:25px 0;
+}
+.download--icon {
+	margin:0 10px 0 0;
+}
+%btn {
+	display:block;
+	font-size:22px;
+	padding:10px 20px 5px;
+}
+.btn--orange {
+	@extend %btn;
+	background:#E67E22;
+	color:#FFF;
+	&:hover {
+		background:#D35400;
+	}
+}
+.btn--grey {
+	@extend %btn;
+	background:#DDD;
+	color:#777;
+	&:hover {
+		background:#CCC;
+	}
+}
+/* main */
+.main {
+	margin:0 0 0 300px;
+	padding:75px 35px 35px;
+	a {
+		color:#E67E22;
+	}
+}
+.feature {
+	float:left;
+	width:49%;
+	margin:0 2% 20px 0;
+	text-align:center;
+	background:#F9F9F9;
+	border:1px solid #E9E9E9;
+	padding:25px;
+	&:nth-child(2n) {
+		margin:0;
+	}
+}
+.feature--icon {
+	font-size:44px;
+	display:inline-block;
+}
+.feature--beta,
+.feature--gamma {
+	text-align:left;
+}
+.noted {
+	float:left;
+	width:100%;
+	margin:50px 0;
+	text-align:center;
+	border-top:1px solid #E5E5E5;
+	border-bottom:1px solid #E5E5E5;
+}
+.disqus {
+	float:left;
+	width:100%;
+}
+.disqus--gamma {
+	font-size:20px;
+}
+#disqus_thread {
+	margin:50px 0;
+}
+
+/*------------------------------------*\
+	FONT AWESOME
+\*------------------------------------*/
+
+@import 'includes/font-awesome.scss';
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'FontAwesome';
+	src:url('../fonts/fontawesome-webfont.eot');
+	src:url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome-webfont.woff') format('woff'),
+		url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+		url('../fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'BigNoodleOblique';
+	src:url('../fonts/big_noodle_titling_oblique-webfont.eot');
+	src:url('../fonts/big_noodle_titling_oblique-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/big_noodle_titling_oblique-webfont.woff') format('woff'),
+		url('../fonts/big_noodle_titling_oblique-webfont.ttf') format('truetype'),
+		url('../fonts/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'BigNoodleRegular';
+	src:url('../big_noodle_titling-webfont.eot');
+	src:url('../big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../big_noodle_titling-webfont.woff') format('woff'),
+		url('../big_noodle_titling-webfont.ttf') format('truetype'),
+		url('../big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
