@@ -15,9 +15,11 @@
       if (supportsSVG()) {
         document.documentElement.className += ' svg';
       }
-      var newDate = new Date();
-      var year = newDate.getFullYear();
-      document.getElementById('getYear').innerHTML = year;
+      window.onload = function () {
+        var newDate = new Date();
+        var year = newDate.getFullYear();
+        document.getElementById('getYear').innerHTML = year;
+      };
     })();
 
     </script>
