@@ -16,6 +16,10 @@
         document.documentElement.className += ' svg';
       }
     })();
+
+    var newDate = new Date();
+    var year = newDate.getFullYear();
+    document.getElementById('getYear').innerHTML = year;
     </script>
 
     <!--[if lte IE 8]>
@@ -99,7 +103,7 @@
       </div>
       <footer class="footer">
         <p>
-          &copy; 2016 HTML5 Blank.
+          &copy; <span id="getYear"></span>" HTML5 Blank.
         </p>
       </footer>
     </aside>
