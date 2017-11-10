@@ -1,185 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>HTML5 Blank WordPress Theme</title>
-    <meta name="description" content="The best HTML5 WordPress boilerplate theme, noted by Adobe, Smashing Mag, .NET mag.">
-    <link href="css/style.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Blank WordPress boilerplate theme - build themes faster with HTML5 Blank</title>
 
-    <script>
-    (function(){
-      document.documentElement.className = 'js';
-      function supportsSVG () {
-        return !!(document.createElementNS && document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect);
-      }
-      if (supportsSVG()) {
-        document.documentElement.className += ' svg';
-      }
-      window.onload = function () {
-        var newDate = new Date();
-        var year = newDate.getFullYear();
-        document.getElementById('getYear').innerHTML = year;
-      };
-    })();
 
-    </script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Quicksand:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!--[if lte IE 8]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+</head>
 
-    <div class="fireshell" style="height: 40px; padding: 8px 0 0;">
-      <p style="display: inline-block;">If HTML5 Blank is useful to you or your team, please consider supporting it!</p>
-      <form style="display: inline-block; margin: 0px 0 0 10px; height: 36px;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="RLVW3NZBFJVSC">
-          <input type="image" src="img/paypal.png" style="vertical-align: middle ;" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-      </form>
-    </div>
+<body>
 
-    <aside class="sidebar">
-      <header class="header clear" role="banner">
-        <div class="logo">
-          <a href="//html5blank.com">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="logo__img">
-          </a>
-        </div>
-        <div class="logo__mark">
-          <h1 class="logo__mark--alpha alpha">HTML5 Blank</h1>
-          <h2 class="logo__mark--beta beta">WordPress Theme</h2>
-        </div>
-      </header>
-      <div class="intro">
-        <div class="intro__twitter">
-          <a href="https://twitter.com/toddmotto" class="twitter-follow-button" data-show-count="true">
-            Follow @toddmotto
-          </a>
-          <a href="https://twitter.com/html5blank" class="twitter-follow-button" data-show-count="true">
-            Follow @html5blank
-          </a>
-          <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
-          p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){
-          js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-          fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-          </script>
-        </div>
-        <p class="intro__overview">
-          <span>The</span> HTML5 WordPress boilerplate theme.
-        </p>
-      </div>
-      <div class="download">
-        <a href="//github.com/toddmotto/html5blank/archive/stable.zip" class="btn btn--orange">
-          <i class="download--icon icon-cloud-download"></i>
-          Download v1.4.2 (stable)
-        </a>
-        <a href="//github.com/toddmotto/html5blank" class="btn btn--orange">
-          <i class="download--icon icon-cloud-download"></i>
-          Nightly build
-        </a>
-        <!--<a href="//demo.html5blank.com" class="btn btn--orange">
-          <i class="download--icon icon-dashboard"></i>
-          Test Drive
-        </a>-->
-        <a href="//github.com/toddmotto/html5blank/blob/master/CHANGELOG.md" class="btn btn--grey">
-          <i class="download--icon icon-book"></i>
-          Changelog
-        </a>
-        <a href="//github.com/toddmotto/html5blank" class="btn btn--grey">
-          <i class="download--icon icon-github"></i>
-          Fork/Contribute
-        </a>
-      </div>
-      <div id="carbonads-container">
-        <div class="carbonad">
-          <div id="azcarbon"></div>
-          <script>
-            var z = document.createElement('script');z.async = true;
-            z.src = '//engine.carbonads.com/z/34228/azcarbon_2_1_0_HORIZ';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(z, s);
-          </script>
-        </div>
-      </div>
-      <footer class="footer">
-        <p>
-          &copy; <span id="getYear"></span> HTML5 Blank.
-        </p>
-      </footer>
-    </aside>
+	<header>
+		<h2><a href="#">HTML5 Blank</a></h2>
+		<nav>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#reviews">Reviews</a></li>
+			<li><a href="#contact">Updates</a></li>
+      <li><a href="https://www.github.com/html5blank/" target="_blank"><i class="fa fa-github"></i> Contribute</a></li>
+		</nav>
+	</header>
 
-    <section class="main clear">
-      <div class="feature">
-        <i class="feature--icon icon-rocket"></i>
-        <h2 class="feature--beta beta">Superfast</h2>
-        <h3 class="feature--gamma gamma">
-          Build WordPress sites at lightning speed with HTML5 Blank,
-          it's packed full of time-saving features and optimisations,
-          best for performance and development.
-        </h3>
-      </div>
-      <div class="feature">
-        <i class="feature--icon icon-beaker"></i>
-        <h2 class="feature--beta beta">Contributors</h2>
-        <h3 class="feature--gamma gamma">
-          Hosted on GitHub, with many pull requests, feature additions,
-          you get a super lean boilerplate blank theme with knowledge
-          from top WordPress developers worldwide.
-        </h3>
-      </div>
-      <div class="feature">
-        <i class="feature--icon icon-camera-retro"></i>
-        <h2 class="feature--beta beta">Discover</h2>
-        <h3 class="feature--gamma gamma">
-          Preloaded with tonnes of awesome productivity and core
-          features, you'll be able to develop and build on HTML5 Blank
-          quicker than any other blank theme.
-        </h3>
-      </div>
-      <div class="feature">
-        <i class="feature--icon icon-group"></i>
-        <h2 class="feature--beta beta">Userbase</h2>
-        <h3 class="feature--gamma gamma">
-          Thousands of people use HTML5 Blank each day
-          and help make it better. Popularised by some great industry brands
-          HTML5 Blank's one of the most popular on the web.
-        </h3>
-      </div>
-      <div class="noted clear">
-        <img src="img/1.png">
-      </div>
-      <div class="disqus">
-        <h3 class="alpha">
-          <i class="icon-code"></i>
-          Support and comments
-        </h3>
-        <h4 class="disqus--gamma gamma">
-          In order to keep building and maintaining my
-          <a href="//github.com/toddmotto">Open Source projects</a>, comments are now
-          unmoderated by myself due to the popularity of HTML5 Blank! For those who have
-          commented so far, thank you for the support toward helping others! Please continue
-          doing so as it's great to see. For more indepth support please drop on
-          <a href="//stackoverflow.com">StackOverflow</a>.
-        </h4>
-        <div id="disqus_thread"></div>
-        <script>
-          var disqus_shortname = 'html5blank';
-          (function() {
-            var dsq = document.createElement('script');
-            dsq.async = dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            document.getElementsByTagName('head')[0].appendChild(dsq);
-          })();
-        </script>
-      </div>
-    </section>
 
-    <script>
-      var _gaq=[['_setAccount','UA-20440416-11'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-  </body>
+	<section class="hero">
+		<div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
+		<h1>HTML <span><i class="fa fa-html5" aria-hidden="true"></i></span> Blank</h1>
+		<h3>An open source boilerplate theme for WordPress</h3>
+		<a href="https://github.com/html5blank/html5blank/archive/stable.zip" class="btn">Download v1.5</a>
+	</section>
+
+
+	<section class="reviews" id="reviews">
+		<h3 class="title">What others say:</h3>
+    <hr>
+
+		<p class="quote">HTML5 Blank: A promising, well-documented WordPress shell for deploying your next WordPress project.</p>
+		<p class="author">— Smashing Magazine (<a href="https://twitter.com/smashingmag/status/251667009706786816" target="_blank">link</a>)</p>
+
+		<p class="quote">This theme helps you start off with a right track towards developing an appropriately coded and structured HTML theme.</p>
+		<p class="author">— Torque (<a href="https://torquemag.io/2017/11/top-10-blank-wordpress-themes-impressive-advantages/" target="_blank">link</a>)</p>
+
+		<p class="quote">HTML5 Blank is a good choice for you if you are already adept at CSS, and want complete control over every single element.</p>
+		<p class="author">— Design Bombs (<a href="https://www.designbombs.com/8-best-wordpress-starter-themes-frameworks-new-wp-developers/" target="_blank">link</a>)</p>
+	</section>
+
+
+	<section class="features" id="features">
+		<h3 class="title">Built With Code You Can Trust</h3>
+		<p>The HTML5 Blank WordPress theme offers annotated support throughout the code, basic &amp; advanced functions, very minimal mark-up and extremely neat &amp; easy to read code.</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fa fa-wordpress"></i>
+				<h4>WordPress</h4>
+				<p>HTML5 Blank includes advanced WordPress features and follows the WordPress Coding Standards.</p>
+			</li>
+			<li>
+				<i class="fa fa-html5"></i>
+				<h4>HTML5</h4>
+				<p>Built on top of HTML5 code standards, HTML5 Blank is a lean, clean starter theme for WordPress.</p>
+			</li>
+			<li>
+				<i class="fa fa-code"></i>
+				<h4>Functions</h4>
+				<p>Pre-loaded with time saving features in functions.php, HTML5 Blank lets you ship your themes quicker.</p>
+			</li>
+		</ul>
+	</section>
+
+
+<!--	<section class="our-work" id="examples">
+		<h3 class="title">Websites built with HTML5 Blank</h3>
+		<p>Started in 2012, HTML5 Blank has been used to build thousands of themes over the years. Take a look at a few of the examples below to see what developers around the world have done with HTML5 Blank.</p>
+		<hr>
+
+		<ul class="grid">
+			<li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
+			<li class="large" style="background-image: url(assets/img/island.jpg);"></li>
+			<li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
+			<li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+		</ul>
+	</section>
+-->
+
+  <section class="our-work" id="video">
+    <h3 class="title">Convert HTML/CSS to WordPress</h3>
+    <p>Watch this video tutorial by <a href="https://chrislamdesign.com/" target="_blank">Chris Lam</a> for converting your HTML/CSS to WordPress with HTML5 Blank.</p>
+
+    <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/bvAKY8sQpRA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+
+	<section class="contact" id="contact">
+		<h3 class="title">Get HTML5 Blank Updates</h3>
+		<p>Sign up to our newsletter below and you'll receive notifications on HTML5 Blank releases, along with occasional emails with tutorials or other extras we release in the future.</p>
+		<hr>
+
+    <!-- Begin MailChimp Signup Form -->
+    <form action="https://deviodigital.us10.list-manage.com/subscribe/post?u=d3c9b15aaed48a8fe8fdbbf47&amp;id=8b2bfb5fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+
+      	<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">
+
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d3c9b15aaed48a8fe8fdbbf47_8b2bfb5fe4" tabindex="-1" value=""></div>
+
+      </div>
+    </form>
+
+    <!--End mc_embed_signup-->
+	</section>
+
+
+	<footer>
+		<ul>
+			<li><a href="https://www.twitter.com/html5blank" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.github.com/html5blank" target="_blank"><i class="fa fa-github"></i></a></li>
+		</ul>
+		<p>&copy; 2017. <a href="http://www.html5blank.com" target="blank">HTML5 Blank</a>. Created by <a href="http://www.toddmotto.com/" target="_blank">Todd Motto</a>. Maintained by <a href="http://www.robertdevore.com/" target="_blank">Robert DeVore</a>.</p>
+	</footer>
+
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58889521-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58889521-2');
+</script>
+
 </html>
