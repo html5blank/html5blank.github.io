@@ -148,8 +148,9 @@ header nav li:last-child{
 		flex-direction: column;
 	}
 
-	header h2{
-		margin-bottom: 15px;
+	header h2,
+	header nav li.contribute span{
+		display: none;
 	}
 }
 
