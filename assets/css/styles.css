@@ -202,6 +202,12 @@ header nav li:last-child{
 	font-size: 90px;
 }
 
+.hero .logo {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 15px;
+}
+
 .hero h3{
 	font: normal 28px 'Quicksand', sans-serif;
 	margin-bottom: 40px;
